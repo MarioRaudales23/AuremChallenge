@@ -11,6 +11,7 @@ Template.recoverPassword.events({
       if (err) {
         console.log(err);
       } else {
+        Router.go('home');
         console.log('success');
       }
     });

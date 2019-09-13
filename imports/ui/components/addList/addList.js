@@ -3,7 +3,6 @@ import { Meteor } from 'meteor/meteor';
 
 Template.addList.events({
   'click #addListButton' (event) {
-    event.preventDefault();
     const doc = {
       listName: $('#addListName').val(),
       listOwner: Meteor.userId(),

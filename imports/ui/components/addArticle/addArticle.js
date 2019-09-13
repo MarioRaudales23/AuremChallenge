@@ -22,7 +22,6 @@ Template.addArticle.events({
     console.log(templateInstance.dataUrl.get('image'));
   },
   'click #addArticleButton'(event, templateInstance) {
-    event.preventDefault();
     const doc = {
       nombre: $('#addArticleName').val(),
       descripcion: $('#addArticleDescription').val(),
