@@ -1,0 +1,149 @@
+.adminPackage {
+  .list-group-item.autoform-array-item .autoform-remove-item {
+    margin: 6px 15px 6px 6px;
+    border: 0px;
+    padding: 6px 12px;
+  }
+  .list-group-item .autoform-add-item {
+    margin: 6px 6px 6px 6px;
+    border: 0px;
+    padding: 6px 12px;
+  }
+  .panel .panel-default {
+    margin-top: -60px;
+  }
+  .autoform-remove-item {
+    vertical-align: top;
+    margin-right: 15px;
+    background: #ff3545 !important;
+  }
+  .glyphicon-plus:before {
+    content: '\002b'; /*plus sign*/
+  }
+  .glyphicon-minus:before {
+    content: '\2212'; /*minus sign*/
+  }
+  .list-group-item {
+    background: transparent !important;
+    border: 0px !important;
+  }
+  ul.list-group {
+    counter-reset: array-index;
+  }
+  .panel-heading {
+    visibility: hidden;
+  }
+}
+
+.flight {
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  border-bottom: 1px solid transparent;
+  background-color: #e2e2e2;
+  width: 50%;
+
+  &-active {
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+  }
+
+  &-desc {
+    font-size: 0.9em;
+    margin-top: 0.4em;
+
+    .label {
+      font-size: 0.8em;
+      padding: 0.35em 0.4em 0.2em 0.4em;
+      margin-right: 0.4em;
+      border-radius: 3px;
+      display: inline-block;
+      position: relative;
+      top: -2px;
+    }
+
+    .label-green {
+      background: #38b071;
+      color: white;
+    }
+  }
+
+  &-cities {
+    flex: 1 0 100%;
+    display: flex;
+    margin: 0.8em 0;
+
+    .flight-city {
+      font-size: 1.875em;
+    }
+
+    .escalas {
+      // line-height: 0.24;
+      font-size: 1.05em;
+      margin-top: 0.6em;
+      background-color: #16437d;
+      border-radius: 10%;
+      padding: 0.1em 0.5em;
+      color: white;
+    }
+
+    .flight-progress {
+      flex: 1 0 auto;
+      height: 4px;
+      align-self: center;
+      margin: 0 15px;
+
+      &-track {
+        width: 50%;
+        height: 100%;
+        text-align: right;
+        font-size: 2.6em;
+        line-height: 0.24;
+        color: #30b16f;
+        letter-spacing: -0.05em;
+      }
+      &-track2 {
+        width: 65%;
+        height: 100%;
+        text-align: right;
+        font-size: 2.6em;
+        line-height: 0.24;
+        color: #30b16f;
+        letter-spacing: -0.05em;
+      }
+    }
+  }
+
+  &-leg {
+    flex: 1 0 50%;
+    display: flex;
+
+    .flight-details {
+      font-size: 1.125em;
+
+      & > thead > tr > td + td {
+        padding-left: 15px;
+      }
+
+      &-estimated {
+        &:after {
+          content: 'EST';
+          font-size: 0.4em;
+          vertical-align: super;
+        }
+      }
+    }
+  }
+
+  &-to {
+    text-align: right;
+    justify-content: flex-end;
+
+    .flight-city {
+      text-align: right;
+    }
+  }
+}
